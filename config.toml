@@ -1,0 +1,18 @@
+# Season for making calls to the API, different seasons return different json responses. (2024 -> Into the Deeep)
+season = 2024
+
+# Event types to consider, omitted event types will be skipped when gathering events
+  # List of valid event types
+  # 1 = League Meet, 2 = Qualifier, 3 = League Tournament,
+  # 4 = Championship, 6 = FIRST Championship, 7 = Super Qualifier
+  # 10 = Off Season, 12 = Kickoff, 13 = Workshop
+  # 14 = Demo/Exhibition, 15 = Volunteer Signup, 16 = Practice Day
+  # 17 = Premier
+allowed_events = [1, 2, 3, 4, 6, 7, 17]
+
+# Settings for determining start of season averages for EPA calculation
+[averages]
+use_predetermined = true # True if the following averages should be used, false if they should be calculated at runtime
+total=27.874032614704255 # Averages for the 2024 season (INTO THE DEEP)
+auto=3.9717385295743504
+tele=19.507600884466555
