@@ -29,7 +29,7 @@ Create a new season score parser:
 1) Navigate to `/data/parsers.py`
 2) Create a new class that **inherits from the ``SeasonScoreParser`` class**
 2) Create a new method `parse()` in the class that takes a new string **event_code** as an argument and returns a new EventData object
-3) Following the existing parsers (_IntoTheDeepScoreParser_) format to create AllianceScoreData objects, MatchData objects and finally adding them to the EventData object
+3) Following the existing parsers (_IntoTheDeepScoreParser_) format, create AllianceScoreData objects by querying the FTC API using the _requests_ library, then create MatchData objects and finally add them to the EventData object
 
 Reference the new score parser:
 1) Navigate to `/data/scores.py`
