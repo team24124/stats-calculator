@@ -13,16 +13,14 @@ def get_epa_parameters(games_played: float):
     k = 0.33
     m = 0
 
-    # Use the constant k = 0.33 to provide more stable epa results
-
-    # if 6 < games_played <= 12:
-    #     k = 0.33 - (games_played - 6) / 45
-    # elif 12 < games_played <= 36:
-    #     k = 0.2
-    #     # m = (games_played - 12)/24 # Unchanged to make EPA reflect more offensive contributions
-    # elif games_played > 36:
-    #     k = 0.2
-    #     # m = 1
+    if 6 < games_played <= 12:
+        k = 0.33 - (games_played - 6) / 45
+    elif 12 < games_played <= 36:
+        k = 0.2
+        # m = (games_played - 12)/24 # Unchanged to make EPA reflect more offensive contributions
+    elif games_played > 36:
+        k = 0.2
+        # m = 1
 
     return m, k
 
